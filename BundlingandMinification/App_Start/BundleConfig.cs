@@ -10,15 +10,15 @@ namespace BundlingandMinification
     {
         public static void RegisterBundle(BundleCollection bundles)
         {
-            //var bundle = new ScriptBundle("~/Bundle/js");
+            //var bundle = new scriptbundle("~/bundle/js");
 
-            // bundle.Include("~/Content/Script/JavaScript1.js",
-            //     "~/Content/script/javaScript2.js",
-            //     "~/Content/script/javaScript3.js",
-            //     "~/Content/script/javaScript4.js",
-            //     "/Content/script/javaScript5.js"
-            //     );
-            // bundles.Add(bundle);
+            //bundle.include("~/content/script/javascript1.js",
+            //    "~/content/script/javascript2.js",
+            //    "~/content/script/javascript3.js",
+            //    "~/content/script/javascript4.js",
+            //    "/content/script/javascript5.js"
+            //    );
+            //bundles.add(bundle);
 
             bundles.Add(new ScriptBundle("~/bundle/js").IncludeDirectory("~/Content/Script","*.js"));
             bundles.Add(new StyleBundle("~/bundle/css").IncludeDirectory("~/Content/Style", "*.css"));
